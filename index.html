@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+</head>
+<body>
+    <div>
+        <div class="username">
+            <div id="text">
+                <input type="text", placeholder="username", id="username">
+            </div>
+        </div>
+        <br>
+        <div class="password">
+            <div id="pass_text">
+                <input type="password", placeholder="password", id="password">
+            </div>
+        </div>
+        <br>
+        <div class="button">
+            <div id="submit_button">
+                <button onclick="save_data()">submit</button>
+            </div>
+            <div id="hint">
+                <button onclick="alert('username = a_mi_ ; password = pi with first 5 digit')">hint</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function save_data() {
+        var username = document.getElementById('username').value
+        var password = document.getElementById('password').value
+        console.log(username)
+        console.log(password)
+        if(username == "admin" & password == "3.14159") {
+            console.log("hello admin")
+            window.open("admin.html")
+        }
+    }
+</script>
+</html>
